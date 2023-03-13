@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi-users = {extras = ["sqlalchemy"], version = "==10.4.0"}
+alembic = "==1.10.2"
+fastapi = "==0.94.0"
+psycopg2-binary = "==2.9.5"
+asyncpg = "==0.27"
+sqlalchemy = "==2.0"
+uvicorn = "==0.21.0"
+aiosqlite = "*"
+
+[dev-packages]
+black = "~=22.10.0"
+flake8 = "~=6.0.0"
+isort = "~=5.12.0"
+mypy = "~=1.0.0"
+
+[requires]
+python_version = "3.10"
